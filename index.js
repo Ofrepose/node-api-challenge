@@ -1,7 +1,8 @@
+const env = require('dotenv').config();
 const express = require("express")
 const logger = require('./middleware/logger');
 const port = process.argv[2] || 4000
-const env = require('dotenv').config();
+
 
 const projectRouter = require("./middleware/projectRouter");
 const actionsRouter = require("./middleware/actionsRouter");
